@@ -1,18 +1,10 @@
 
-
 @font-face {
-  font-family: myfont;
-  src: url('IRANSansX-Black.ttf');
+  font-family: 'myfont';
+  src: url('./fonts/fa-brands-400.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
-
-  
-  
-  * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
 
 
 .body_2{
@@ -20,15 +12,7 @@
 
  background-color: rgb(0, 0, 0);
  
- @font-face {
-  font-family: 'myfont';
-  src: url('./fonts/fa-brands-400.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-color: white;
-
- 
+/* color: white; */
 
 }
 
@@ -55,7 +39,7 @@ color: white;
     justify-content: space-between;
     align-items: center;
     backdrop-filter: blur(8px);
-    height: 63px;
+    height: 73px;
     direction: rtl;
     }
 
@@ -73,22 +57,6 @@ color: white;
       padding: 100px 20px;
       background-color: #f5f5f5;
       height: 1500px;
-    }
-
-    .logo{
-
- width: 50px;
-
-    }
-
-
-     .logo2{
-
- width: 60px;
- text-align: right;
- direction: rtl;
- display: block;
-
     }
 
     .my-icon2{
@@ -415,10 +383,78 @@ color: white;
 }
 
 
+.div_pro {
+  background-color: #f5f5f5;
+  padding: 10px 15px;
+  border-radius: 10px;
+  display: inline-flex;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
 
-.div_col{
+.pro {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 600;
+  font-family: system-ui;
+  color: rgb(50, 50, 50);
+}
+
+.peple {
+ background-color: white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    flex-shrink: 0;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+ .peple:hover {
+ background-color: rgb(208, 208, 208);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    flex-shrink: 0;
+    overflow: hidden;
+    cursor: pointer;
+}
 
 
 
-    
+.my-icon3 {
+
+    width: 45px;
+    height: 31px;
+    fill: rgb(81, 81, 81);
+     cursor: pointer;
+}
+
+
+
+
+@keyframes customFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px) scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.modal.fade.show .modal-dialog {
+  animation: customFadeIn 0.4s ease forwards;
 }
