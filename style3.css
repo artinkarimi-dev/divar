@@ -443,6 +443,123 @@
 
 
 
+ /* my_chat */
+
+.div_chat {
+  display: flex;
+  flex-direction: column; 
+  gap: 10px; 
+  padding: 114px 80px 0px 0px;
+  align-items: flex-end; 
+}
+
+.chat {
+  background-color: rgb(132, 255, 132);
+  border-radius: 15px 0px 15px 15px;
+  padding: 15px;
+  font-weight: 500;
+  width: fit-content;
+  max-width: 60%; 
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.lbl {
+ 
+  /* padding: 8px 12px; */
+  border-radius: 15px;
+  display: block;
+  text-align: right;
+}
+
+
+
+
+
+/* your chat */
+
+
+.div_chat2 {
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 80px 0px 0px 80px;
+    align-items: flex-start;
+
+}
+
+.chat2 {
+  background-color: rgb(224 224 224);
+    border-radius: 0px 15px 15px 15px;
+    padding: 15px;
+    font-weight: 500;
+    width: fit-content;
+    max-width: 60%;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+     direction: rtl;
+}
+
+.lbl2 {
+ 
+  border-radius: 15px;
+  display: block;
+  text-align: right;
+}
+
+
+
+.col_div_input{
+
+margin-top: 2%;
+
+
+}
+
+.continer_input {
+  position: fixed;
+  bottom: 0; /* بیاد پایین صفحه بچسبه */
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background-color: rgba(255, 255, 255, 0.142);
+  text-align: center;
+  display: flex; /* بهتره flex باشه برای وسط‌چین کردن راحت */
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  z-index: 9999; /* خیلی بالا، تا رو همه چی باشه */
+  backdrop-filter: blur(10px); /* اگه بخوای حالت شیشه‌ای هم داشته باشه */
+}
+
+
+
+
+.in_chat{
+
+margin: auto;
+/* display: block; */
+width: 40%;
+
+}
+
+
+.in{
+
+    border-radius: 5px 5px 5px 5px;
+     direction: rtl;
+
+}
+
+
+
+
+
 
 @keyframes customFadeIn {
   0% {
