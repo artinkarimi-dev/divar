@@ -451,28 +451,41 @@
   gap: 10px; 
   padding: 114px 80px 0px 0px;
   align-items: flex-end; 
+
+  /* overflow-y: auto;  */
+  max-height: calc(100vh - 100px); 
+  /* padding-bottom: 50px;  */
+
+
 }
 
 .chat {
-  background-color: rgb(132, 255, 132);
-  border-radius: 15px 0px 15px 15px;
-  padding: 15px;
-  font-weight: 500;
-  width: fit-content;
-  max-width: 60%; 
   text-align: right;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
+  margin: 5px;
+  background-color: #4caf50;
+  color: white;
+  padding: 8px;
+  border-radius: 10px;
+  max-width: 60%;
 }
 
-.lbl {
- 
-  /* padding: 8px 12px; */
-  border-radius: 15px;
-  display: block;
-  text-align: right;
+.chat2 {
+  text-align: left;
+  margin: 5px;
+  background-color: #e0e0e0;
+  color: black;
+  padding: 8px;
+  border-radius: 10px;
+  max-width: 60%;
 }
+
+
+.lbl {
+  display: block;
+  white-space: normal;
+  word-wrap: break-word;
+}
+
 
 
 
@@ -489,27 +502,20 @@
     padding: 80px 0px 0px 80px;
     align-items: flex-start;
 
+
+    overflow-y: auto; 
+  max-height: calc(100vh - 100px); 
+  padding-bottom: 80px; 
+
 }
 
-.chat2 {
-  background-color: rgb(224 224 224);
-    border-radius: 0px 15px 15px 15px;
-    padding: 15px;
-    font-weight: 500;
-    width: fit-content;
-    max-width: 60%;
-    text-align: right;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-     direction: rtl;
-}
 
 .lbl2 {
  
-  border-radius: 15px;
-  display: block;
-  text-align: right;
+   display: block;
+  white-space: normal;
+  word-wrap: break-word;
+
 }
 
 
@@ -523,18 +529,19 @@ margin-top: 2%;
 
 .continer_input {
   position: fixed;
-  bottom: 0; /* بیاد پایین صفحه بچسبه */
+  bottom: 0; 
   left: 0;
   width: 100%;
   height: 100px;
   background-color: rgba(255, 255, 255, 0.142);
   text-align: center;
-  display: flex; /* بهتره flex باشه برای وسط‌چین کردن راحت */
+  display: flex; 
   align-items: center;
   justify-content: center;
   padding: 0;
-  z-index: 9999; /* خیلی بالا، تا رو همه چی باشه */
-  backdrop-filter: blur(10px); /* اگه بخوای حالت شیشه‌ای هم داشته باشه */
+  z-index: 9999; 
+  backdrop-filter: blur(10px); 
+
 }
 
 
@@ -543,21 +550,22 @@ margin-top: 2%;
 .in_chat{
 
 margin: auto;
-/* display: block; */
 width: 40%;
 
 }
 
-
-.in{
-
-    border-radius: 5px 5px 5px 5px;
-     direction: rtl;
-
+.in {
+  border-radius: 5px;
+  direction: rtl;
+  resize: none; 
+  overflow-y: auto;
+  min-height: 40px;
+  max-height: 150px;
 }
 
 
-.btn{
+
+.btn5{
 
 padding: 10px;
 background-color: white;
@@ -566,7 +574,7 @@ font-weight: 500;
 
 }
 
-.btn:hover{
+.btn5:hover{
 
 padding: 10px;
 background-color: rgb(80, 255, 235);
