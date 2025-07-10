@@ -1,0 +1,68 @@
+[1mdiff --git a/agahi.html b/agahi.html[m
+[1mindex 139597f..067ec40 100644[m
+[1m--- a/agahi.html[m
+[1m+++ b/agahi.html[m
+[36m@@ -1,2 +1,62 @@[m
+ [m
+ [m
+[32m+[m[32m<!DOCTYPE html>[m
+[32m+[m[32m<html>[m
+[32m+[m
+[32m+[m[32m <head>[m
+[32m+[m
+[32m+[m[32m    <meta charset='UTF-8'>[m
+[32m+[m[32m<meta name='keywords' content='your, tags'>[m
+[32m+[m[32m<meta name='description' content='150 words'>[m
+[32m+[m[32m<meta name='subject' content='your website's subject'>[m
+[32m+[m[32m<meta name='copyright' content='company name'>[m
+[32m+[m[32m<meta name='language' content='ES'>[m
+[32m+[m[32m<meta name='robots' content='index,follow'>[m
+[32m+[m[32m<meta name='revised' content='Sunday, July 18th, 2010, 5:15 pm'>[m
+[32m+[m[32m<meta name='abstract' content=''>[m
+[32m+[m[32m<meta name='topic' content=''>[m
+[32m+[m[32m<meta name='summary' content=''>[m
+[32m+[m[32m<meta name='Classification' content='Business'>[m
+[32m+[m[32m<meta name='author' content='name, email@hotmail.com'>[m
+[32m+[m[32m<meta name='designer' content=''>[m
+[32m+[m[32m<meta name='reply-to' content='email@hotmail.com'>[m
+[32m+[m[32m<meta name='owner' content=''>[m
+[32m+[m[32m<meta name='url' content='http://www.websiteaddrress.com'>[m
+[32m+[m[32m<meta name='identifier-URL' content='http://www.websiteaddress.com'>[m
+[32m+[m[32m<meta name='directory' content='submission'>[m
+[32m+[m[32m<meta name='pagename' content='jQuery Tools, Tutorials and Resources - O'Reilly Media'>[m
+[32m+[m[32m<meta name='category' content=''>[m
+[32m+[m[32m<meta name='coverage' content='Worldwide'>[m
+[32m+[m[32m<meta name='distribution' content='Global'>[m
+[32m+[m[32m<meta name='rating' content='General'>[m
+[32m+[m[32m<meta name='revisit-after' content='7 days'>[m
+[32m+[m[32m<meta name='subtitle' content='This is my subtitle'>[m
+[32m+[m[32m<meta name='target' content='all'>[m
+[32m+[m[32m<meta name='HandheldFriendly' content='True'>[m
+[32m+[m[32m<meta name='MobileOptimized' content='320'>[m
+[32m+[m[32m<meta name='date' content='Sep. 27, 2010'>[m
+[32m+[m[32m<meta name='search_date' content='2010-09-27'>[m
+[32m+[m[32m<meta name='DC.title' content='Unstoppable Robot Ninja'>[m
+[32m+[m[32m<meta name='ResourceLoaderDynamicStyles' content=''>[m
+[32m+[m[32m<meta name='medium' content='blog'>[m
+[32m+[m[32m<meta name='syndication-source' content='https://mashable.com/2008/12/24/free-brand-monitoring-tools/'>[m
+[32m+[m[32m<meta name='original-source' content='https://mashable.com/2008/12/24/free-brand-monitoring-tools/'>[m
+[32m+[m[32m<meta name='verify-v1' content='dV1r/ZJJdDEI++fKJ6iDEl6o+TMNtSu0kv18ONeqM0I='>[m
+[32m+[m[32m<meta name='y_key' content='1e39c508e0d87750'>[m
+[32m+[m[32m<meta name='pageKey' content='guest-home'>[m
+[32m+[m[32m<meta itemprop='name' content='jQTouch'>[m
+[32m+[m[32m<meta http-equiv='Expires' content='0'>[m
+[32m+[m[32m<meta http-equiv='Pragma' content='no-cache'>[m
+[32m+[m[32m<meta http-equiv='Cache-Control' content='no-cache'>[m
+[32m+[m[32m<meta http-equiv='imagetoolbar' content='no'>[m
+[32m+[m[32m<meta http-equiv='x-dns-prefetch-control' content='off'>[m
+[32m+[m
+[32m+[m[32m </head>[m
+[32m+[m
+[32m+[m[32m <body>[m
+[32m+[m[41m    [m
+[32m+[m
+[32m+[m
+[32m+[m[32m </body>[m
+[32m+[m
+[32m+[m[32m</html>[m
+\ No newline at end of file[m
