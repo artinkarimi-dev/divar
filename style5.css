@@ -1,0 +1,166 @@
+
+@font-face {
+  font-family: 'myfont';
+  src: url('font/IRANSansMobile_Medium.ttf') format('woff2'),
+       url('font/fa-light-300.woff2') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-color: #f8f9fa;
+  font-family: myfont;
+}
+
+.contact-page {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem;
+}
+
+.contact-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.chat-box {
+  border: 1px solid #dee2e6;
+  border-radius: 12px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+}
+
+.chat-messages {
+  flex-grow: 1;
+  padding: 2rem;
+  overflow-y: auto;
+}
+
+.chat-input {
+  padding: 1rem;
+  border-top: 1px solid #dee2e6;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.chat-input input {
+  flex-grow: 1;
+}
+
+.info-box {
+  background: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.form-control:focus, .btn:focus {
+  box-shadow: none;
+}
+
+.badge {
+  padding: 17px;
+  font-size: 15px;
+}
+
+.modal.fade .modal-dialog {
+  transform: translateX(100%);
+  transition: transform 0.5s ease-in-out;
+}
+
+.modal.fade.show .modal-dialog {
+  transform: translateX(0);
+}
+
+.modal-menu .modal-content {
+  height: 100%;
+  border-radius: 0;
+  background-color: #1a1a1a;
+  color: white;
+  padding: 2.5rem 2rem;
+  text-align: right;
+}
+
+.modal-menu h2 {
+  color: #00c4ff;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.modal-menu a {
+  display: block;
+  font-size: 1.4rem;
+  margin: 1rem 0;
+  text-decoration: none;
+  color: #00c4ff;
+  transition: all 0.3s ease;
+}
+
+.modal-menu a:hover {
+  color: #ffffff;
+  transform: translateX(-10px);
+}
+
+.btn-close {
+  filter: invert(1);
+  position: absolute;
+  top: 1.5rem;
+  left: 2rem;
+}
+
+.modal-dialog {
+  margin: 0;
+  max-width: 100%;
+  height: 100%;
+}
+
+.btn {
+  width: 60px;
+  height: 60px;
+  font-weight: bold;
+  transition: 0.5s;
+  border: none;
+  direction: rtl;
+}
+
+.fa, .fa-brands, .fa-classic, .fa-regular, .fa-sharp, .fa-solid, .fab, .far, .fas {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: var(--fa-display, inline-block);
+  font-style: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-rendering: auto;
+  font-size: 33px;
+}
+
+.btn:hover {
+  font-weight: bold;
+  transition: 0.5s;
+  border: none;
+  background-color: rgb(5, 5, 5);
+  color: rgb(255, 255, 255);
+}
+
+.my-icon {
+  width: 17px;
+  height: 17px;
+  color: white;
+  fill: rgb(217, 217, 217);
+}
+
+.btn2 {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  color: white;
+}
+
+.in2 {
+  height: 61px;
+  direction: rtl;
+  font-family: myfont;
+  text-align: right;
+}

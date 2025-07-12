@@ -1,4 +1,20 @@
 
+<?php
+$db = mysqli_connect('localhost', 'root', '', 'divar');
+if (!$db) {
+    die("اتصال به دیتابیس برقرار نشد: " . mysqli_connect_error());
+}
+
+$sql = "SELECT * FROM sabtnam ORDER BY created_at DESC";
+
+$result = mysqli_query($db, $sql);
+
+if (!$result) {
+    die("خطا در اجرای کوئری: " . mysqli_error($db));
+}
+?>
+
+
 <!DOCTYPE html>
 <html>
 
@@ -254,28 +270,24 @@
 
 
 
-    <div class="col_agahi">
-
-
+    <div class="col_agahi2">
+<?php while($row = mysqli_fetch_assoc($result)): ?>
   <div class="div_agahi">
-  <div class="agahi">
-    <img
-      class="img_agahi"
-      src="https://s100.divarcdn.com/static/photo/neda/webp_thumbnail/8I6W-M5ol88HEM7efv6ruw/aba12a4c-0653-4c5f-ae20-47f827bf5a27.webp"
-      alt="img"
-    >
-    <div class="moshakhasat">
-      <div class="text_mahsol">
-        واحد اداری ۱۱۰متری جردن/۴ اتاق/ ۲ پارکینگ سندی
-      </div> <br>
-      <div class="text_juzeeat">
-        <span>ودیعه: ۵۰۰,۰۰۰,۰۰۰ تومان</span><br>
-        <span>اجاره: ۶۵,۰۰۰,۰۰۰ تومان</span>
-        <br><br>
-        <span style="color: rgba(255, 255, 255, 0.427);">  املاك كاما در جردن </span>
+    <div class="agahi">
+      <img class="img_agahi" src="<?php echo htmlspecialchars($row['img']); ?>" alt="img">
+      <div class="moshakhasat">
+        <div class="text_mahsol"><?php echo htmlspecialchars($row['name']); ?></div> <br>
+         <div class="text_mahsol"><?php echo htmlspecialchars($row['price']); ?></div> <br>
+        <div class="text_juzeeat">
+          <span><?php echo nl2br(htmlspecialchars($row['description'])); ?></span><br><br>
+          <span style="color: rgba(255, 255, 255, 0.427); margin-top: 8%; display: block;">
+            آگهی ثبت‌شده توسط کاربر
+          </span>
+        </div>
       </div>
     </div>
   </div>
+<?php endwhile; ?>
 </div>
 
 
@@ -284,155 +296,7 @@
 
 
 
-
-  <div class="div_agahi">
-  <div class="agahi">
-    <img
-      class="img_agahi"
-      src="https://s100.divarcdn.com/static/photo/neda/webp_thumbnail/YLeKwldxdqqksmLRYDYqmw/441ad8a6-eba0-48fe-9e0d-49d142f6de53.webp"
-      alt="img"
-    >
-    <div class="moshakhasat">
-      <div class="text_mahsol">
-       گیربکس هایما.اریو. جیلی شاسی.جیلی امگرند
-      </div> <br>
-      <div class="text_juzeeat">
-      
-        <br><br>
-        <span style="color: rgba(255, 255, 255, 0.427); margin-top: 13%; display: block;"> پله شده در خاوران </span>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-
-    </div>
-
-
-
- 
-
-
-     <div class="col_agahi2">
-
-
-  <div class="div_agahi">
-  <div class="agahi">
-    <img
-      class="img_agahi"
-      src="https://s100.divarcdn.com/static/photo/afra/webp_thumbnail/z9_vZozJc8EO_zw2beY69g/f79be65e-5517-48b9-b52f-8ec5b3ce7a1e.webp"
-      alt="img"
-    >
-    <div class="moshakhasat">
-      <div class="text_mahsol">
-       مبل شور و فرش شور و سرامیک شور
-      </div> <br>
-      <div class="text_juzeeat">
-        <span> نو </span><br>
-        <span> ۱۰,۰۰۰,۰۰۰ تومان </span>
-        <br><br>
-        <span style="color: rgba(255, 255, 255, 0.427); margin-top: 8%; display: block;">  لحظاتی پیش در کاشانک  </span>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-
-
-
-
-
-  <div class="div_agahi">
-  <div class="agahi">
-    <img
-      class="img_agahi"
-      src="https://s100.divarcdn.com/static/photo/neda/webp_thumbnail/7jkUUcDXeX7JB98p8AnM7Q/c9af841b-06f2-457c-9ae6-e6ab45f80686.webp"
-      alt="img"
-    >
-    <div class="moshakhasat">
-      <div class="text_mahsol">
-     پژو 207i اتوماتیک، مدل ۱۳۹۶ نقد و اقساط
-      </div> <br>
-      <div class="text_juzeeat">
-        <span> ۲۱۰,۰۰۰ کیلومتر </span><br>
-        <span> ۶۹۸,۰۰۰,۰۰۰ تومان </span>
-        <br><br>
-        <span style="color: rgba(255, 255, 255, 0.427); display: block; margin-top: 8%;"> نمایشگاه در دانشگاه علم و صنعت </span>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-
-    </div>
-
-
-
-
-
-
-
-    <div class="col_agahi3">
-
-
-  <div class="div_agahi">
-  <div class="agahi">
-    <img
-      class="img_agahi"
-      src="https://s100.divarcdn.com/static/photo/afra/webp_thumbnail/4f1pjb_CquoADs_nL6eJNg/10cb9d11-c473-4d18-8f2a-ebc8663b1353.webp"
-      alt="img"
-    >
-    <div class="moshakhasat">
-      <div class="text_mahsol">
-       چند قلاده توله ژرمن آلمانی اصل ۲ تا نر بلک ودورنگ
-      </div> <br>
-      <div class="text_juzeeat">
-       
-        <br><br>
-        <span style="color: rgba(255, 255, 255, 0.427); display: block; margin-top: 8%;"> نردبان شده | فروشگاه </span>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-
-
-
-
-
-  <div class="div_agahi">
-  <div class="agahi">
-    <img
-      class="img_agahi"
-      src="https://s100.divarcdn.com/static/photo/neda/webp_thumbnail/QVhYB82FKgDU9r1Z-ZzYaQ/2a33fbae-b0e5-4cc3-ba99-acadc94cdbeb.webp"
-      alt="img"
-    >
-    <div class="moshakhasat">
-      <div class="text_mahsol">
-        ایفون ۱۲
-      </div> <br>
-      <div class="text_juzeeat">
-        <span> در حد نو </span><br>
-        <span> ۲۷,۰۰۰,۰۰۰ تومان </span>
-        <br><br>
-        <span style="color: rgba(255, 255, 255, 0.427); display: block; margin-top: 5%;"> لحظاتی پیش در گیشا (کوی نصر) </span>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-
-    </div>
+    
 
 
 
@@ -567,61 +431,7 @@
   </body>
 
 
-  <script>
-  let generatedCode = null;
-
-  document.getElementById("submitBtn").addEventListener("click", function () {
-    const phone = document.getElementById("in1").value.trim();
-    const regex = /^09\d{9}$/;
-
-    if (regex.test(phone)) {
-   
-      generatedCode = Math.floor(Math.random() * (99999 - 90000 + 1)) + 90000;
-
-     
-      alert("کد تأیید شما: " + generatedCode);
-
-     
-      const sms = document.getElementById("smsSection");
-      sms.style.display = "block";
-      sms.style.opacity = 0;
-      setTimeout(() => {
-        sms.style.opacity = 1;
-      }, 50);
-
-
-      if (!document.getElementById("verifyBtn")) {
-        const btn = document.createElement("button");
-        btn.textContent = "ورود";
-        btn.className = "btn btn-success w-100 mt-3";
-        btn.id = "verifyBtn";
-        btn.addEventListener("click", function () {
-          const enteredCode = document.getElementById("verifyCodeInput").value.trim();
-          if (enteredCode === generatedCode.toString()) {
-        
-            document.getElementById("successMessage").style.display = "block";
-
-          
-            setTimeout(() => {
-              window.location.href = "agahi.html";
-            }, 2000);
-          } else {
-            alert(" .کد وارد شده شما نادرست است ");
-          }
-        });
-        document.getElementById("smsSection").appendChild(btn);
-      }
-
-    } else {
-      alert("شماره موبایل معتبر وارد کنید! مثل: 09123456789");
-    }
-  });
-
-
-  document.getElementById("in1").addEventListener("input", function () {
-    this.value = this.value.replace(/[^0-9]/g, "").slice(0, 11);
-  });
-</script>
+  <script src="j4.js"></script>
 
 
 

@@ -246,8 +246,8 @@
   flex-direction: row;
   align-items: center;
   gap: 20px;
-  white-space: nowrap; /* نزار بره خط بعد */
-  overflow-x: auto; /* اگه جا نشد، اسکرول افقی */
+  white-space: nowrap; 
+  overflow-x: auto;
 }
 
 .file-input {
@@ -335,7 +335,7 @@ color: white;
   border-radius: 12px;
   padding: 15px;
   font-size: 16px;
-  resize: vertical; /* فقط اجازه بده از پایین کشیده بشه */
+  resize: vertical; 
   outline: none;
   box-shadow: 0 0 10px rgba(255,255,255,0.05);
   transition: 0.3s;

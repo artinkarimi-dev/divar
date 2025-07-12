@@ -6,382 +6,292 @@
   font-style: normal;
 }
 
-
-.body_2{
-
-
- background-color: rgb(0, 0, 0);
- 
-/* color: white; */
-
+.body_2 {
+  background-color: rgb(0, 0, 0);
 }
 
+.hero {
+  background-image: url('image/image_store.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  position: relative;
+}
 
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(8px);
+  height: 73px;
+  direction: rtl;
+}
 
-  .hero {
-      background-image: url('image/image_store.jpg'); /* آدرس عکس خودتو بزن */
-      background-size: cover;
-      background-position: center;
-      height: 400px;
-      position: relative;
-    }
-
-    /* 🔻 منو */
-    .navbar {
-     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-    z-index: 999;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    backdrop-filter: blur(8px);
-    height: 73px;
-    direction: rtl;
-    }
-
-    .navbar a {
-
+.navbar a {
   color: rgb(98 98 98);
-    text-decoration: none;
-    margin-left: 13px;
-    font-size: 13px;
-    font-weight: 500;
+  text-decoration: none;
+  margin-left: 13px;
+  font-size: 13px;
+  font-weight: 500;
+}
 
-    }
+.content {
+  padding: 100px 20px;
+  background-color: #f5f5f5;
+  height: 1500px;
+}
 
-    .content {
-      padding: 100px 20px;
-      background-color: #f5f5f5;
-      height: 1500px;
-    }
+.my-icon2 {
+  width: 17px;
+  height: 17px;
+  color: rgb(98 98 98);
+  fill: rgb(98 98 98);
+  margin-left: 7px;
+  font-weight: 800;
+}
 
-    .my-icon2{
+.icon {
+  width: 15px;
+  height: 15px;
+  color: rgb(59, 59, 59);
+  fill: rgb(59, 59, 59);
+  margin-left: 7px;
+  font-weight: bold;
+  margin-right: 3px;
+}
 
- width: 17px;
-    height: 17px;
-    /* background-color: white; */
-    color: rgb(98 98 98);
-    fill: rgb(98 98 98);
-    margin-left: 7px;
-    font-weight: 800;
-
-    }
-
-
-    .icon{
-
-
-    width: 15px;
-    height: 15px;
-    /* background-color: white; */
-    color: rgb(59, 59, 59);
-    fill: rgb(59, 59, 59);
-    margin-left: 7px;
-    font-weight: bold;
-    margin-right: 3px;
-
-    }
-
-
-    .bg_text{
-
- background-color: rgba(255, 255, 255, 0.67);
-    height: 90px;
-    width: 47%;
-    margin: auto;
-    align-items: center;
-    padding: 25px 0px 0px 0px;
-    font-family: 'myfont';
-
-    }
-
- .h1{
-
- color: rgb(0, 0, 0); 
- font-size: 30px;
-  text-align: center; 
-  align-items: center; 
+.bg_text {
+  background-color: rgba(255, 255, 255, 0.67);
+  height: 90px;
+  width: 47%;
   margin: auto;
+  align-items: center;
+  padding: 25px 0px 0px 0px;
+  font-family: 'myfont';
+}
 
- }
-
-
-
-
- 
-    .bg_text2{
-
- background-color: rgba(255, 255, 255, 0.67);
-    height: 80px;
-    width: 37%;
-    margin: auto;
-    align-items: center;
-    padding: 25px 0px 0px 0px;
-    font-family: 'myfont';
-
-    }
-
- .h12{
-
- color: rgb(0, 0, 0); 
- font-size: 20px;
-  text-align: center; 
-  align-items: center; 
+.h1 {
+  color: rgb(0, 0, 0);
+  font-size: 30px;
+  text-align: center;
+  align-items: center;
   margin: auto;
+}
 
- }
+.bg_text2 {
+  background-color: rgba(255, 255, 255, 0.67);
+  height: 80px;
+  width: 37%;
+  margin: auto;
+  align-items: center;
+  padding: 25px 0px 0px 0px;
+  font-family: 'myfont';
+}
 
+.h12 {
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  text-align: center;
+  align-items: center;
+  margin: auto;
+}
 
- .search-box {
-      position: relative;
-      width: 400px;
-      margin: auto;
-    }
+.search-box {
+  position: relative;
+  width: 400px;
+  margin: auto;
+}
 
-    .search-box input {
-      width: 100%;
-      padding: 12px 45px 12px 12px; /* فاصله از سمت راست برای آیکون */
-      border: none;
-      border-radius: 8px;
-      font-size: 16px;
-      outline: none;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-      margin: auto;
-    }
+.search-box input {
+  width: 100%;
+  padding: 12px 45px 12px 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  margin: auto;
+}
 
-    .my-icon3 {
-      position: absolute;
-      right: 12px;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 20px;
-      height: 20px;
-      fill: #888;
-      pointer-events: none;
-    }
+.my-icon3 {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  fill: #888;
+  pointer-events: none;
+}
 
+.col_div_continer {
+}
 
-   .col_div_continer{
+.div_continer {
+  margin-bottom: 1%;
+  padding: 0px 0px 0px 140px;
+  display: inline-flex;
+}
 
+.continer {
+  background-color: white;
+  height: 190px;
+  width: 42.9%;
+  border: 1px solid rgba(120, 120, 120, 0.236);
+  padding: 22px 20px 0px 0px;
+  border-radius: 5px;
+  margin-right: 18px;
+  box-shadow: 0px 0px 3px 0px #00000017;
+}
 
-
-    /* margin-bottom: 10%; */
-
-
-
-   }
-
-
-
-    .div_continer{
-
-    /* margin: auto; */
-    margin-bottom: 1%;
-    padding: 0px 0px 0px 140px;
-    display: inline-flex
-;
-
-    }
-
-    .continer{
-
-     background-color: white;
-    height: 190px;
-    width: 42.9%;
-    border: 1px solid rgba(120, 120, 120, 0.236);
-    padding: 22px 20px 0px 0px;
-    border-radius: 5px;
-    margin-right: 18px;
-    box-shadow: 0px 0px 3px 0px #00000017;
-    
-
-    }
-
-
-   .h6_txt{
-
-    text-align: right;
-
-   }
-
-    .p_txt{
-
-    font-size: 13px;
-    color: rgb(115, 115, 115);
-    direction: rtl;
-    text-align: right;
-    font-weight: 500;
-    margin-top: 15px;
-
-    }
-
-
-    .edame{
-
+.h6_txt {
   text-align: right;
-    direction: rtl;
-    display: block;
-    margin-top: 20px;
-    font-size: 13px;
-    color: #525252;
-    font-weight: bold;
+}
 
-    }
-
-
-   .edame2{
-
+.p_txt {
+  font-size: 13px;
+  color: rgb(115, 115, 115);
+  direction: rtl;
   text-align: right;
-    direction: rtl;
-    display: block;
-    /* margin-top: 20px; */
-    font-size: 13px;
-    color: #525252;
-    font-weight: bold;
+  font-weight: 500;
+  margin-top: 15px;
+}
 
-    }
+.edame {
+  text-align: right;
+  direction: rtl;
+  display: block;
+  margin-top: 20px;
+  font-size: 13px;
+  color: #525252;
+  font-weight: bold;
+}
 
+.edame2 {
+  text-align: right;
+  direction: rtl;
+  display: block;
+  font-size: 13px;
+  color: #525252;
+  font-weight: bold;
+}
 
-    .btn_edame{
+.btn_edame {
+  border: none;
+  padding: 0px;
+  margin: 0px;
+  background-color: rgba(255, 255, 255, 0);
+  font-weight: bold;
+  color: #454545;
+}
 
-   border: none;
-   padding: 0px;
-   margin: 0px;
-   background-color: rgba(255, 255, 255, 0);
-   font-weight: bold;
- color: #454545;
-    }
-
-
-
-
-
-
-    .faq-container {
-    max-width: 1000px; /* عرض کلی کانتینر */
-    margin: 40px auto;
-    background-color: #fff;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+.faq-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .faq-main-title {
-    font-size: 24px;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 30px;
-    text-align: center;
-    border-bottom: 2px solid #eee; /* خط زیر عنوان */
-    padding-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 30px;
+  text-align: center;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 20px;
 }
 
 .faq-grid {
-    display: flex;
-    justify-content: space-between;
-    gap: 30px; /* فاصله بین ستون‌ها */
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
 }
 
 .faq-column {
-    flex: 1; /* هر ستون فضای مساوی را اشغال می‌کند */
+  flex: 1;
 }
 
 .faq-category-item {
-    display: block;
-    padding: 12px 15px;
-    margin-bottom: 10px;
-    background-color: #f7f7f7; /* رنگ پس زمینه آیتم‌های دسته بندی */
-    border-radius: 5px;
-    color: #333;
-    text-decoration: none;
-    font-size: 16px;
-    transition: background-color 0.2s ease;
-    position: relative; /* برای آیکون فلش */
+  display: block;
+  padding: 12px 15px;
+  margin-bottom: 10px;
+  background-color: #f7f7f7;
+  border-radius: 5px;
+  color: #333;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background-color 0.2s ease;
+  position: relative;
 }
 
 .faq-category-item:hover {
-    background-color: #eee;
+  background-color: #eee;
 }
 
-/* استایل برای آیتم فعال (پرداخت و مسئله‌های مالی) */
 .faq-category-item.active {
-    background-color: #ff0000; /* رنگ قرمز دیوار */
-    color: #fff;
-    font-weight: bold;
-    border-radius: 5px 0 0 5px; /* گوشه‌های گرد در سمت راست */
+  background-color: #ff0000;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 5px 0 0 5px;
 }
 
 .faq-sub-items {
-    list-style: none;
-    padding: 0;
-    margin-top: 10px; /* فاصله از آیتم اصلی */
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
 }
 
 .faq-sub-items li a {
-    display: block;
-    padding: 10px 20px; /* کمی تورفتگی برای زیرمجموعه‌ها */
-    margin-bottom: 5px;
-    color: #555;
-    text-decoration: none;
-    font-size: 15px;
-    transition: color 0.2s ease;
+  display: block;
+  padding: 10px 20px;
+  margin-bottom: 5px;
+  color: #555;
+  text-decoration: none;
+  font-size: 15px;
+  transition: color 0.2s ease;
 }
 
 .faq-sub-items li a:hover {
-    color: #ff0000; /* تغییر رنگ هنگام هاور برای لینک‌های زیرمجموعه */
+  color: #ff0000;
 }
 
 .more-info-section {
-    text-align: center;
-    margin-top: 50px;
-    padding-top: 30px;
-    border-top: 2px solid #eee; /* خط بالای این بخش */
+  text-align: center;
+  margin-top: 50px;
+  padding-top: 30px;
+  border-top: 2px solid #eee;
 }
 
 .more-info-section a {
-    font-size: 18px;
-    font-weight: bold;
-    color: #ff0000; /* رنگ قرمز دیوار */
-    text-decoration: none;
-    margin-left: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ff0000;
+  text-decoration: none;
+  margin-left: 10px;
 }
 
 .more-info-section a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .divar-logo-small {
-    width: 30px; /* اندازه لوگوی کوچک دیوار */
-    vertical-align: middle;
+  width: 30px;
+  vertical-align: middle;
 }
 
-/* اگر میخواهید فلش کنار آیتم ها را اضافه کنید (نیاز به Font Awesome دارید) */
-/*
-.faq-category-item::before {
-    content: '\f0d7'; // fa-chevron-down
-    font-family: 'Font Awesome 5 Free';
-    font-weight: 900;
-    position: absolute;
-    left: 15px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #888;
-}
-
-.faq-category-item.active::before {
-    color: #fff;
-}
-*/
-
-/* برای گرد کردن گوشه های سمت چپ در ستون دوم، در صورت نیاز */
 .faq-grid .faq-column:last-child .faq-category-item.active {
-    border-radius: 5px 0 0 5px;
+  border-radius: 5px 0 0 5px;
 }
-
 
 .div_pro {
   background-color: #f5f5f5;
@@ -402,61 +312,48 @@
 }
 
 .peple {
- background-color: white;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-    flex-shrink: 0;
-    overflow: hidden;
-    cursor: pointer;
-    transition: 0.3s;
+  background-color: white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  flex-shrink: 0;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-
- .peple:hover {
- background-color: rgb(208, 208, 208);
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-    flex-shrink: 0;
-    overflow: hidden;
-    cursor: pointer;
+.peple:hover {
+  background-color: rgb(208, 208, 208);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  flex-shrink: 0;
+  overflow: hidden;
+  cursor: pointer;
 }
-
-
 
 .my-icon3 {
-
-    width: 45px;
-    height: 31px;
-    fill: rgb(81, 81, 81);
-     cursor: pointer;
+  width: 45px;
+  height: 31px;
+  fill: rgb(81, 81, 81);
+  cursor: pointer;
 }
-
-
-
- /* my_chat */
 
 .div_chat {
   display: flex;
-  flex-direction: column; 
-  gap: 10px; 
+  flex-direction: column;
+  gap: 10px;
   padding: 114px 80px 0px 0px;
-  align-items: flex-end; 
-
-  /* overflow-y: auto;  */
-  max-height: calc(100vh - 100px); 
-  /* padding-bottom: 50px;  */
-
-
+  align-items: flex-end;
+  max-height: calc(100vh - 100px);
 }
 
 .chat {
@@ -479,111 +376,74 @@
   max-width: 60%;
 }
 
-
 .lbl {
   display: block;
   white-space: normal;
   word-wrap: break-word;
 }
 
-
-
-
-
-
-/* your chat */
-
-
 .div_chat2 {
-
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding: 80px 0px 0px 80px;
-    align-items: flex-start;
-
-
-    overflow-y: auto; 
-  max-height: calc(100vh - 100px); 
-  padding-bottom: 80px; 
-
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 80px 0px 0px 80px;
+  align-items: flex-start;
+  overflow-y: auto;
+  max-height: calc(100vh - 100px);
+  padding-bottom: 80px;
 }
-
 
 .lbl2 {
- 
-   display: block;
+  display: block;
   white-space: normal;
   word-wrap: break-word;
-
 }
 
-
-
-.col_div_input{
-
-margin-top: 2%;
-
-
+.col_div_input {
+  margin-top: 2%;
 }
 
 .continer_input {
   position: fixed;
-  bottom: 0; 
+  bottom: 0;
   left: 0;
   width: 100%;
   height: 100px;
   background-color: rgba(255, 255, 255, 0.142);
   text-align: center;
-  display: flex; 
+  display: flex;
   align-items: center;
   justify-content: center;
   padding: 0;
-  z-index: 9999; 
-  backdrop-filter: blur(10px); 
-
+  z-index: 9999;
+  backdrop-filter: blur(10px);
 }
 
-
-
-
-.in_chat{
-
-margin: auto;
-width: 40%;
-
+.in_chat {
+  margin: auto;
+  width: 40%;
 }
 
 .in {
   border-radius: 5px;
   direction: rtl;
-  resize: none; 
+  resize: none;
   overflow-y: auto;
   min-height: 40px;
   max-height: 150px;
 }
 
-
-
-.btn5{
-
-padding: 10px;
-background-color: white;
-transition: 0.3s;
-font-weight: 500;
-
+.btn5 {
+  padding: 10px;
+  background-color: white;
+  transition: 0.3s;
+  font-weight: 500;
 }
 
-.btn5:hover{
-
-padding: 10px;
-background-color: rgb(80, 255, 235);
-
-
+.btn5:hover {
+  padding: 10px;
+  background-color: rgb(80, 255, 235);
 }
-
-
-
 
 @keyframes customFadeIn {
   0% {
